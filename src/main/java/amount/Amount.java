@@ -11,7 +11,11 @@ public class Amount {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void addAmount(int amount) {
+        this.amount += amount;
+    }
+
+    public void reduceAmount(int amount){
+        this.amount -= amount;
     }
 }
