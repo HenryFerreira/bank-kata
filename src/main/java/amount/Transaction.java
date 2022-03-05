@@ -17,7 +17,6 @@ public class Transaction {
         this.date = date;
     }
 
-
     public String showTransaction(){
         if(this.transactionType == Constant.DEPOSIT){
             String body = "|" + this.date.getDateString() + "|" + this.amount + "|\t|" + this.balance + "|";
@@ -25,16 +24,5 @@ public class Transaction {
         }
         String body = "|" + this.date.getDateString() + "|\t|" + this.amount + "|" +this.balance + "|";
         return body;
-    }
-
-    @Override
-    public String toString() {
-        return "Transaction{" +
-                "transactionId=" + transactionId +
-                ", transactionType=" + transactionType +
-                ", amount=" + amount +
-                ", balance=" + balance +
-                ", date=" + date +
-                '}';
     }
 }

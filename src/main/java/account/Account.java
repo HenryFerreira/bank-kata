@@ -12,7 +12,6 @@ public class Account {
     private Amount amount;
     private TransactionList transactionList;
 
-
     public Account(Long accountId, Amount amount, TransactionList transactionList) {
         this.accountId = accountId;
         this.amount = amount;
@@ -20,7 +19,6 @@ public class Account {
     }
 
     public void deposit(int amount, Date date) {
-        System.out.println("aca");
         int balance = this.amount.getAmount() + amount;
         Transaction transaction = new Transaction(Constant.DEPOSIT, amount, balance, date);
         this.transactionList.addTransaction(transaction);
@@ -42,5 +40,4 @@ public class Account {
             System.out.println(element.showTransaction());
         }
     }
-
 }

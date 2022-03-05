@@ -16,7 +16,6 @@ public class TransactionList {
     }
 
     public void addTransaction(Transaction transaction) {
-        //transaction.toString();
         this.transactionList.add(transaction);
     }
 
