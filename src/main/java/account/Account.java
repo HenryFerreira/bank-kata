@@ -36,9 +36,10 @@ public class Account {
 
     public void printStatements() {
         List<Transaction> list = this.transactionList.getTransactionList();
-        System.out.println("Transacciones: ");
+        String title = "|date|credit|debit|balance|";
+        System.out.println(title);
         for (Transaction element : list) {
-            System.out.println(element.toString());
+            System.out.println(element.showTransaction());
         }
     }
 

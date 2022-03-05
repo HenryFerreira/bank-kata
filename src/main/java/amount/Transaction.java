@@ -17,6 +17,16 @@ public class Transaction {
         this.date = date;
     }
 
+
+    public String showTransaction(){
+        if(this.transactionType == Constant.DEPOSIT){
+            String body = "|" + this.date.getDateString() + "|" + this.amount + "|\t|" + this.balance + "|";
+            return body;
+        }
+        String body = "|" + this.date.getDateString() + "|\t|" + this.amount + "|" +this.balance + "|";
+        return body;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +

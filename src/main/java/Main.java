@@ -19,6 +19,9 @@ public class Main {
         newAccount = new Account(1L, initialAmount, new TransactionList());
 
         newAccount.deposit(5000, new Date("03/04/2022"));
+        newAccount.deposit(1050, new Date("03/04/2022"));
+        newAccount.withdraw(1200, new Date("03/04/2022"));
+        newAccount.deposit(500, new Date("03/04/2022"));
 
         newAccount.printStatements();
     }
